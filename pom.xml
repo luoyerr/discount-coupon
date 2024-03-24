@@ -15,6 +15,9 @@
         <spring-boot-dependencies.version>3.1.0</spring-boot-dependencies.version>
         <spring-cloud-dependencies.version>2022.0.1</spring-cloud-dependencies.version>
         <spring-cloud-alibaba-dependencies.version>2022.0.0.0-RC2</spring-cloud-alibaba-dependencies.version>
+        <mybatis-plus-boot-starter.version>3.5.4.1</mybatis-plus-boot-starter.version>
+        <groovy-all.version>4.0.15</groovy-all.version>
+        <hutool-all.version>5.8.3</hutool-all.version>
     </properties>
     <!--
         添加父工程
@@ -53,6 +56,30 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+
+            <!--
+                引入 MyBatis-Plus
+            -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-boot-starter.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.apache.groovy</groupId>
+                <artifactId>groovy-all</artifactId>
+                <version>${groovy-all.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool-all.version}</version>
+            </dependency>
+
         </dependencies>
 
     </dependencyManagement>
