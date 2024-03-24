@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    nacos:
+      server-addr: 192.168.241.149:8848
+    compatibility-verifier:
+      enabled: false

@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/coupon-ability/getway-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-ability/getway-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-ability/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-ability/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-ablitiy/getway-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-ablitiy/getway-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-ablitiy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-ablitiy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-business/cart-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-business/cart-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-business/coupon-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-business/coupon-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-business/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-commons/commons-base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-commons/commons-base/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-commons/commons-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-commons/commons-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-entity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-entity/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-remote/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/coupon-remote/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

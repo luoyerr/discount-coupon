@@ -6,7 +6,18 @@
 
     <groupId>com.github.coupon</groupId>
     <artifactId>discount-coupon-pom</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <modules>
+
+        <module>coupon-ability</module>
+        <module>coupon-business</module>
+        <module>coupon-commons</module>
+        <module>coupon-config</module>
+        <module>coupon-entity</module>
+        <module>coupon-remote</module>
+
+    </modules>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -18,6 +29,8 @@
         <mybatis-plus-boot-starter.version>3.5.4.1</mybatis-plus-boot-starter.version>
         <groovy-all.version>4.0.15</groovy-all.version>
         <hutool-all.version>5.8.3</hutool-all.version>
+
+        <commons.version>1.0.0</commons.version>
     </properties>
     <!--
         添加父工程
@@ -80,7 +93,50 @@
                 <version>${hutool-all.version}</version>
             </dependency>
 
-        </dependencies>
 
+        <!--
+        自己的
+        -->
+
+            <dependency>
+                <groupId>com.github.coupon</groupId>
+                <artifactId>commons-web</artifactId>
+                <version>${commons.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.coupon</groupId>
+                <artifactId>commons-base</artifactId>
+                <version>${commons.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.coupon</groupId>
+                <artifactId>coupon-entity</artifactId>
+                <version>${commons.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.coupon</groupId>
+                <artifactId>coupon-config</artifactId>
+                <version>${commons.version}</version>
+            </dependency>
+        </dependencies>
     </dependencyManagement>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <runtime>dev</runtime>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <runtime>test</runtime>
+            </properties>
+        </profile>
+    </profiles>
 </project>

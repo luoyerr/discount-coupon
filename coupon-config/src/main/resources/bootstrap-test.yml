@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    nacos:
+      server-addr: 测试环境地址:8848
+    compatibility-verifier:
+      enabled: false

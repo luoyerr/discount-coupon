@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    nacos:
+      server-addr: 生产环境:8848
+    compatibility-verifier:
+      enabled: false
