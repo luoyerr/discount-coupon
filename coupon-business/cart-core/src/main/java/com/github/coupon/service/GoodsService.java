@@ -1,7 +1,7 @@
 package com.github.coupon.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.github.coupon.entity.Goods;
+import com.github.coupon.entity.po.Goods;
 
 /**
  * 商品表(Goods)表服务接口

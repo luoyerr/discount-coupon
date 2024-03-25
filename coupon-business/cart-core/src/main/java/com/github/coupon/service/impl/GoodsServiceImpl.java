@@ -2,7 +2,7 @@ package com.github.coupon.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.coupon.dao.GoodsDao;
-import com.github.coupon.entity.Goods;
+import com.github.coupon.entity.po.Goods;
 import com.github.coupon.service.GoodsService;
 import org.springframework.stereotype.Service;
 

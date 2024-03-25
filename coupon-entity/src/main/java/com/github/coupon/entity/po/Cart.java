@@ -1,4 +1,4 @@
-package com.github.coupon.entity;
+package com.github.coupon.entity.po;
 
 
 import com.github.coupon.entity.base.BaseEntity;

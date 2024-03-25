@@ -1,7 +1,6 @@
 package com.github.coupon.controller;
 
 
-import com.github.coupon.entity.Goods;
 import com.github.coupon.entity.base.R;
 import com.github.coupon.service.GoodsService;
 import org.springframework.beans.factory.annotation.Autowired;

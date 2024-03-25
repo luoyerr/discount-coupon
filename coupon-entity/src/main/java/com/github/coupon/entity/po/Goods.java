@@ -1,4 +1,4 @@
-package com.github.coupon.entity;
+package com.github.coupon.entity.po;
 
 
 import lombok.Data;

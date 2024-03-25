@@ -1,14 +1,19 @@
 package com.github.coupon.controller;
 
 
-import com.github.coupon.entity.Cart;
+import com.github.coupon.entity.po.Cart;
 import com.github.coupon.entity.base.R;
+import com.github.coupon.entity.po.Goods;
+import com.github.coupon.entity.vo.CartPriceJisuanVo;
+import com.github.coupon.entity.vo.CartPriceVo;
 import com.github.coupon.service.CartService;
+import com.github.coupon.service.GoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.List;
 
 
 /**
@@ -33,11 +38,31 @@ public class CartController {
      */
     @PostMapping("/insert")
     public R insert(@RequestBody Cart cart) {
-        System.out.println(" --> " +  cart);
         // 模拟一个用户id
         cart.setUid(1);
         cartService.save(cart);
         return R.succ();
+    }
+
+    /**
+     * 查询我的购物车
+     * @return
+     */
+    @GetMapping("/mylist")
+    public R mylist( Integer uid) {
+        return R.succ(cartService.queryMyCarts(uid));
+    }
+
+    /**
+     * 计算购物车总价
+     * @param cartPriceJisuanVo
+     * @return
+     */
+    @PostMapping("/cartAllPrice")
+    public R cartAllPrice(@RequestBody CartPriceJisuanVo cartPriceJisuanVo) {
+        System.out.println("计算购物车总价 : " + cartPriceJisuanVo);
+        CartPriceVo cartPriceVo = cartService.cartAllPrice(cartPriceJisuanVo);
+        return R.succ(cartPriceVo);
     }
 }
 

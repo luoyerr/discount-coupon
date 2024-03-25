@@ -3,7 +3,7 @@ package com.github.coupon.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-import com.github.coupon.entity.Goods;
+import com.github.coupon.entity.po.Goods;
 
 /**
  * 商品表(Goods)表数据库访问层
