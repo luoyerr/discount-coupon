@@ -1,0 +1,20 @@
+server:
+  port: 80
+spring:
+  application:
+    name: gateway-server
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        shared-configs:
+          - data-id: gateway-routes.yml
+            refresh: true
+
+#    gateway:
+#      routes:
+#        - id : cart-server
+#          uri: lb://cart-server
+#          predicates:
+#            - Path=/cart/**,/goods/**

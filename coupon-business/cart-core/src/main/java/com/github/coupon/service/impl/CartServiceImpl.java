@@ -14,6 +14,26 @@ import org.springframework.stereotype.Service;
  */
 @Service("cartService")
 public class CartServiceImpl extends ServiceImpl<CartDao, Cart> implements CartService {
+    @Override
+    public boolean save(Cart entity) {
+        // 判断当前用户的购物车中是否已经存在该商品
+        Cart cart =  this.query()
+                .eq("gid" ,entity.getGid())
+                .eq("uid",entity.getUid())
+                .one();
 
+        if (cart == null) {
+            // 没有添加过这个商品
+            entity.setNumber(1);
+            entity.setXiaoji(80.00);
+            // 保存购物车信息
+            return super.save(entity);
+        }
+        // 已经添加过该商品
+        cart.setNumber(cart.getNumber() + 1);
+        // 查询购物车的信息
+        this.updateById(cart);
+        return true;
+    }
 }
 
