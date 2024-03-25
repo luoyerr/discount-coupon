@@ -5,4 +5,4 @@ spring:
     name: coupon-server
   profiles:
 #    表示当前环境是开发环境 引用 bootstrop-dev.yml
-    active: @runtime@
+    active: dev

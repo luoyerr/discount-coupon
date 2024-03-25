@@ -26,5 +26,12 @@
             <groupId>com.github.coupon</groupId>
             <artifactId>commons-web</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+
+
     </dependencies>
 </project>
