@@ -1,3 +1,5 @@
+
+
 spring:
   datasource:
     url: jdbc:mysql://192.168.241.150:3306/pay_db?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
@@ -12,3 +14,6 @@ spring:
       server-addr: 192.168.241.150:8848
     compatibility-verifier:
       enabled: false
+  data:
+    mongodb:
+      uri: mongodb://root:123456@192.168.241.150:27017/coupon_db?authSource=admin&authMechanism=SCRAM-SHA-1
